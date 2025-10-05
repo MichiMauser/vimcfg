@@ -1,0 +1,95 @@
+" .ideavimrc is a configuration file for IdeaVim plugin. It uses
+"   the same commands as the original .vimrc configuration.
+" You can find a list of commands here: https://jb.gg/h38q75
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=10
+
+" Do incremental searching.
+set incsearch
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+" --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
+
+" Highlight copied text
+Plug 'machakann/vim-highlightedyank'
+" Commentary plugin
+Plug 'tpope/vim-commentary'
+
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \r to the Reformat Code action
+"map \r <Action>(ReformatCode)
+"hlo"
+"" Map <leader>d to start debug
+"map <leader>d <Action>(Debug)
+
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>()
+
+set linenumber
+set showmode
+set showcmd
+set visualbell
+set clipboard+=unnamed
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+nnoremap <CR> :nohlsearch<CR><CR>
+set surround
+set sneak
+set nerdtree
+set easymotion
+set notimeout
+
+let mapleader = " "
+
+
+noremap j h
+noremap k j
+noremap l k
+noremap ; l
+
+" Map ' to the original ; functionality (repeat f/F/t/T)
+noremap ' ;
+
+" For visual mode
+vnoremap j h
+vnoremap k j
+vnoremap l k
+vnoremap ; l
+vnoremap ' ;
+
+" For operator-pending mode
+onoremap j h
+onoremap k j
+onoremap l k
+onoremap ; l
+onoremap ' ;
+
+inoremap jk <Esc>
+
+
+
+nnoremap <A-n> :tabnext<CR>
+nnoremap <A-p> :tabprev<CR>\
+" Pane navigation
+nnoremap <A-j> <C-w>h
+nnoremap <A-k> <C-w>j
+nnoremap <A-l> <C-w>k
+nnoremap <A-;> <C-w>l
+
+
+map <leader>x :NERDTreeToggle<CR>
+" Folding
+map <leader>zc :action CollapseAllRegions<CR>
+map <leader>zo :action ExpandAllRegions<CR>
+
+map <leader>q <action>(CloseContent)
