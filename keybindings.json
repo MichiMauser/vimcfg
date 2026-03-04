@@ -1,0 +1,24 @@
+[
+    {
+        "key": "f6",
+        "command": "cmake.launchTarget",
+        "when": "cmake:enableFullFeatureSet && !cmake:hideDebugCommand && !inDebugMode"
+    },
+    {
+        "key": "ctrl+f5",
+        "command": "-cmake.launchTarget",
+        "when": "cmake:enableFullFeatureSet && !cmake:hideDebugCommand && !inDebugMode"
+    },
+    {
+        "key": "f6",
+        "command": "code-runner.run"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "-code-runner.run"
+    },
+    { "key": "alt+j", "command": "workbench.action.focusLeftGroup",  "when": "editorTextFocus" },
+    { "key": "alt+k", "command": "workbench.action.focusBelowGroup", "when": "editorTextFocus" },
+    { "key": "alt+l", "command": "workbench.action.focusAboveGroup", "when": "editorTextFocus" },
+    { "key": "alt+;", "command": "workbench.action.focusRightGroup", "when": "editorTextFocus" }
+]

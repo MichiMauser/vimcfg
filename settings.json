@@ -1,0 +1,74 @@
+{
+    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+    "code-runner.runInTerminal": true,
+    "explorer.confirmDelete": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.iconTheme": "material-icon-theme",
+    "code-runner.fileDirectoryAsCwd": true,
+    "update.mode": "start",
+    "files.autoSave": "afterDelay",
+    "python.defaultInterpreterPath": "E:\\Python\\python.exe",
+    "haskell.manageHLS": "GHCup",
+    "prolog.executablePath": "C:\\Program Files\\swipl\\bin\\swipl",
+    "vim.useSystemClipboard": true,
+    "vim.ignorecase": true,
+    "vim.smartcase": true,
+    "vim.incsearch": true,
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    "vim.surround": true,
+    "vim.sneak": true,
+    "vim.easymotion": true,
+    "vim.bell": "visual",
+    "editor.lineNumbers": "on",
+    "editor.cursorSurroundingLines": 10,
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-s>": false,
+        "<C-z>": false
+    },
+    "vim.digraphs": {},
+    "vim.commandLineModeKeyBindings": [],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        { "before": ["j"], "after": ["h"] },
+        { "before": ["k"], "after": ["j"] },
+        { "before": ["l"], "after": ["k"] },
+        { "before": [";"], "after": ["l"] },
+        { "before": ["'"], "after": [";"] },
+        { "before": ["<CR>"], "commands": [":nohlsearch"] },
+        { "before": ["Q"], "after": ["g", "q"] },
+        { "before": ["<leader>", "j"], "after": ["<leader>", "<leader>", "s"] },
+        { "before": ["<A-n>"], "commands": ["workbench.action.nextEditor"] },
+        { "before": ["<A-p>"], "commands": ["workbench.action.previousEditor"] },
+        { "before": ["<leader>", "x"], "commands": ["workbench.action.toggleSidebarVisibility"] },
+        { "before": ["<leader>", "w", "v"], "commands": ["workbench.action.splitEditor"] },
+        { "before": ["<leader>", "w", "s"], "commands": ["workbench.action.splitEditorDown"] },
+        { "before": ["<leader>", "w", "u"], "commands": ["workbench.action.joinAllGroups"] },
+        { "before": ["<leader>", "w", "m"], "commands": ["workbench.action.moveEditorToNextGroup"] },
+        { "before": ["<leader>", "r", "n"], "commands": ["editor.action.rename"] },
+        { "before": ["<leader>", "r", "m"], "commands": ["editor.action.extractMethod"] },
+        { "before": ["<leader>", "z", "c"], "commands": ["editor.foldAll"] },
+        { "before": ["<leader>", "z", "o"], "commands": ["editor.unfoldAll"] },
+        { "before": ["<leader>", "q"], "commands": ["workbench.action.closeActiveEditor"] }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        { "before": ["j"], "after": ["h"] },
+        { "before": ["k"], "after": ["j"] },
+        { "before": ["l"], "after": ["k"] },
+        { "before": [";"], "after": ["l"] },
+        { "before": ["'"], "after": [";"] }
+    ],
+    "vim.operatorPendingModeKeyBindingsNonRecursive": [
+        { "before": ["j"], "after": ["h"] },
+        { "before": ["k"], "after": ["j"] },
+        { "before": ["l"], "after": ["k"] },
+        { "before": [";"], "after": ["l"] },
+        { "before": ["'"], "after": [";"] }
+    ]
+}
