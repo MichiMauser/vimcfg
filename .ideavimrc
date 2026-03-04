@@ -49,8 +49,10 @@ set nerdtree
 set easymotion
 set notimeout
 
+set which-key
 let mapleader = " "
 
+map <leader>j <Plug>(easymotion-s)
 
 noremap j h
 noremap k j
@@ -88,6 +90,14 @@ nnoremap <A-;> <C-w>l
 
 
 map <leader>x :NERDTreeToggle<CR>
+
+map <leader>wv <Action>(SplitVertically)
+map <leader>ws <Action>(SplitHorizontally)
+map <leader>wu <Action>(Unsplit)
+map <leader>wm <Action>(MoveEditorToOppositeTabGroup)
+
+map <leader>rn <Action>(RenameElement)
+map <leader>rm <Action>(ExtractMethod)
 " Folding
 map <leader>zc :action CollapseAllRegions<CR>
 map <leader>zo :action ExpandAllRegions<CR>
